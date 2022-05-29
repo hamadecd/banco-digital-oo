@@ -1,5 +1,8 @@
 package dioBancoDigital;
 
+import lombok.Getter;
+
+@Getter
 public abstract class Conta implements IConta {
 
 	private static int SEQUENCIAL = 1;
@@ -12,14 +15,6 @@ public abstract class Conta implements IConta {
 		this.agencia = agencia;
 		this.conta = SEQUENCIAL++;
 		this.cliente = cliente;
-	}
-
-	public int getConta() {
-		return conta;
-	}
-
-	public double getSaldo() {
-		return saldo;
 	}
 
 	@Override

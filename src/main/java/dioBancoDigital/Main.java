@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		Banco banco = new Banco();
-		banco.setNome("Itau");
+		banco.setNomeBanco("Itau");
 		banco.setNumeroBanco(1);
 
 		Cliente fulano = new PessoaFisica("Fulano", "08906191668");
@@ -21,8 +21,8 @@ public class Main {
 
 		List<Conta> listaContas = new ArrayList<Conta>();
 		Conta contaPoupancaFulano;
-		// adicionando na lista de Contas, assim garanto que toda conta instanciada já
-		// estará na lista
+		// adicionando na lista de Contas, assim garanto que toda conta instanciada ja vai
+		// estar na lista
 		listaContas.add(contaPoupancaFulano = new ContaPoupanca(fulano, agenciaCentro));
 		Conta contaCorrenteFulano;
 		listaContas.add(contaCorrenteFulano = new ContaCorrente(fulano, agenciaCentro));
